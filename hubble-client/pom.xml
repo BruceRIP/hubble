@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.budgie.hubble.client</groupId>
   <artifactId>hubble-client</artifactId>
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>hubble-client</name>
   <url>http://maven.apache.org</url>

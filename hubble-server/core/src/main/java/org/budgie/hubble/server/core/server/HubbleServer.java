@@ -38,24 +38,21 @@ public class HubbleServer extends AbstractVerticle {
     private final JsonArray jsonArrayRequest = new JsonArray();
     Properties propertiesFile = null;
 
+    @Override
     public void start(Future<Void> startFuture) throws Exception {
         new ApplicationProperties().configFile(properties -> this.propertiesFile = properties );
         Router router = Router.router(vertx);
-        // Al manejar sesion Vertex necesita un handler de tipo Cookie
-        //router.route().handler(CookieHandler.create());
-        // Creamos un almacen de sesiones local (Lo guarda en memoria de la instancia de Vertx)
-        // Lo asiganamos al handler
-        //router.route().handler(SessionHandler.create(SessionStore.create(vertx)));
-        // Creamos un mapa local para guardar los servicios que se van registrando en el servidor
-        instancesMap = vertx.sharedData().getLocalMap("instancesMap");
         // Usado para mapear los recursos estaticos como son: .js .css .html
         router.route("/static/*").handler(StaticHandler.create().setCachingEnabled(false));
-        // manejador de la peticion HTTP
+        // Creamos un mapa local para guardar los servicios que se van ir registrando en el servidor
+        instancesMap = vertx.sharedData().getLocalMap("instancesMap");
+        // manejador de la peticion HTTP de l pagina
         router.get("/").handler(this::handleShowingPage);
         // Manejador del body de la peticion
         router.route().handler(BodyHandler.create());
-        // manejadores de la peticion HTTP GET, POST y DELETE
+        // manejadores de la peticion HTTP GET para mostrar las configruaciones del archivo
         router.get(HubbleConstant.CONFIGURATION_PATH).handler(this::handleConfigurations);
+        // manejadores de la peticion HTTP GET, POST, DELETE y poder consultar, guardar y eliminar microservicios
         router.get(HubbleConstant.REGISTER_PATH).handler(this::handleGetRequest);
         router.post(HubbleConstant.REGISTER_PATH).handler(this::handlePostRequest);
         router.delete(HubbleConstant.REGISTER_PATH).handler(this::handleDeleteRequest);

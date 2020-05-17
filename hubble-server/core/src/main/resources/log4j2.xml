@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<Appenders>
+		<Console name="console-log" target="SYSTEM_OUT">
+			<PatternLayout>
+				<pattern>%d{dd MMM yyyy HH:mm:ss} %c{1} - %m%n</pattern>
+			</PatternLayout>
+		</Console>
+	</Appenders>
+
+	<Loggers>
+		<AsyncLogger name="org.budgie.service.discovery" level="TRACE"
+			additivity="false">
+			<appender-ref ref="console-log" />
+		</AsyncLogger>
+
+		<AsyncRoot level="INFO" additivity="false">
+			<appender-ref ref="console-log" />
+		</AsyncRoot>
+	</Loggers>
+</Configuration>

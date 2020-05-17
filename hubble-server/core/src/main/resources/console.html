@@ -15,170 +15,170 @@
   <!-- CSS Files -->
   <link href="/static/assets/css/black-dashboard.css" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="/static/assets/demo/demo.css" rel="stylesheet" />  
+  <link href="/static/assets/demo/demo.css" rel="stylesheet" />
   <link href="/static/assets/css/chat.css" rel="stylesheet" />
 </head>
 
 <body class="">
-  <div class="wrapper">
+<div class="wrapper">
 
-    <div id="main-panel" class="main-panel">
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
-        <div class="container-fluid">
-          <div class="navbar-wrapper">
-            <div class="navbar-toggle d-inline">
-              <button type="button" class="navbar-toggler">
-                <span class="navbar-toggler-bar bar1"></span>
-                <span class="navbar-toggler-bar bar2"></span>
-                <span class="navbar-toggler-bar bar3"></span>
-              </button>
-            </div>
-            <a class="navbar-brand" href="javascript:void(0)" style="padding-top: 30px;">VERT.X</a>
+  <div id="main-panel" class="main-panel">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
+      <div class="container-fluid">
+        <div class="navbar-wrapper">
+          <div class="navbar-toggle d-inline">
+            <button type="button" class="navbar-toggler">
+              <span class="navbar-toggler-bar bar1"></span>
+              <span class="navbar-toggler-bar bar2"></span>
+              <span class="navbar-toggler-bar bar3"></span>
+            </button>
           </div>
+          <a class="navbar-brand" href="javascript:void(0)" style="padding-top: 30px;">Hubble Server</a>
         </div>
-      </nav>
-      <div class="modal modal-search fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="SEARCH">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <i class="tim-icons icon-simple-remove"></i>
-              </button>
-            </div>
+      </div>
+    </nav>
+    <div class="modal modal-search fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="SEARCH">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="tim-icons icon-simple-remove"></i>
+            </button>
           </div>
         </div>
       </div>
-      <!-- End Navbar -->
-      
-      
-
-
-
-
-
-      <!-- ****************************************************************************************************  -->
-      <!-- ******************************* C O N T E N I D O    P A G I N A     B O D Y ********************  -->
-      <div id="content" class="content">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header card-header-important">
-                <h3 class="title">Instances currently registered with Service Discovery</h3>
-              </div>
-               <div class="table-responsive">
-                  <table class="table tablesorter services-registry" id="">
-                    <thead class=" text-primary">
-                      <tr>
-                        <th class="text-center">
-                          Service Name
-                        </th>
-                        <!--<th class="text-center">
-                          URL
-                        </th>-->
-                        <th class="text-center">
-                          Protocol
-                        </th>
-                        <th class="text-center">
-                          Status
-                        </th>
-                        <th class="text-center">
-                          Instances
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>                       
-                    </tbody>
-                  </table>
-                </div>
-            </div>
-          </div>          
-        </div>
-      </div>
-      <!-- ****************************************************************************************************  -->
-      <!-- ******************************* C O N T E N I D O    P A G I N A     B O D Y ********************  -->
-
-
-
-
-
-
-<!-- *************************************** P I E    D E    P A G I N A **********************************************  -->
-      <footer class="footer">
-        <div class="container-fluid">
-          <ul class="nav">
-            <li class="nav-item">
-              <a href="javascript:void(0)" class="nav-link">
-                Budgie Software Technologies
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="javascript:void(0)" class="nav-link">
-                About Us
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="javascript:void(0)" class="nav-link">
-                Blog
-              </a>
-            </li>
-          </ul>
-          <div class="copyright">
-            ©
-            <script>
-              document.write(new Date().getFullYear())
-            </script> created by
-            <a href="javascript:void(0)" target="_blank">Budgie Software Technologies</a>
-          </div>
-        </div>
-      </footer>
     </div>
+    <!-- End Navbar -->
+
+
+
+
+
+
+
+    <!-- ****************************************************************************************************  -->
+    <!-- ******************************* C O N T E N I D O    P A G I N A     B O D Y ********************  -->
+    <div id="content" class="content">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-important">
+              <h3 class="title">Instances currently registered in Hubble Server</h3>
+            </div>
+            <div class="table-responsive">
+              <table class="table tablesorter services-registry" id="">
+                <thead class=" text-primary">
+                <tr>
+                  <th class="text-center">
+                    Service Name
+                  </th>
+                  <!--<th class="text-center">
+                    URL
+                  </th>-->
+                  <th class="text-center">
+                    Protocol
+                  </th>
+                  <th class="text-center">
+                    Status
+                  </th>
+                  <th class="text-center">
+                    Instances
+                  </th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ****************************************************************************************************  -->
+    <!-- ******************************* C O N T E N I D O    P A G I N A     B O D Y ********************  -->
+
+
+
+
+
+
+    <!-- *************************************** P I E    D E    P A G I N A **********************************************  -->
+    <footer class="footer">
+      <div class="container-fluid">
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="https://budgiesoftware.com/"  target="_blank" class="nav-link">
+              Budgie Software Technologies
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="javascript:void(0)" class="nav-link">
+              About Us
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="javascript:void(0)" class="nav-link">
+              Blog
+            </a>
+          </li>
+        </ul>
+        <div class="copyright">
+          ©
+          <script>
+            document.write(new Date().getFullYear())
+          </script> created by
+          <a href="https://github.com/BruceRIP/hubble" target="_blank">BruceRIP</a>
+        </div>
+      </div>
+    </footer>
   </div>
+</div>
 <!-- ****************************************************************************************************  -->
-  
-  
-  
+
+
+
 <!-- ****************************** C A M B I O   D E   L O O K   A N D   F E E L      ****************************************************** -->
-  <div id="changeTheme" class="fixed-plugin">
-    <div class="dropdown show-dropdown">
-      <a href="#" data-toggle="dropdown">
-        <i class="fa fa-cog fa-2x"> </i>
-      </a>
-      <ul class="dropdown-menu">
-        <li class="header-title"> Change Theme</li>        
-        <li class="adjustments-line text-center color-change"> 
-          <span class="color-label">LIGHT MODE</span>
-          <span class="badge light-badge mr-2"></span>
-          <span class="badge dark-badge ml-2"></span>
-          <span class="color-label">DARK MODE</span>
-        </li>
-        <li></li>        
-      </ul>
-    </div>
+<div id="changeTheme" class="fixed-plugin">
+  <div class="dropdown show-dropdown">
+    <a href="#" data-toggle="dropdown">
+      <i class="fa fa-cog fa-2x"> </i>
+    </a>
+    <ul class="dropdown-menu">
+      <li class="header-title"> Change Theme</li>
+      <li class="adjustments-line text-center color-change">
+        <span class="color-label">LIGHT MODE</span>
+        <span class="badge light-badge mr-2"></span>
+        <span class="badge dark-badge ml-2"></span>
+        <span class="color-label">DARK MODE</span>
+      </li>
+      <li></li>
+    </ul>
   </div>
+</div>
 <!-- ****************************************************************************************************************************************** -->
 
 
 
-<!-- ************************************** J A V A S C R I P T    F I L E S ****************************************************************** -->  
-  <!-- ******** N O T A: ES REQUERIDO EL ORDEN DE LOS IMPORTS-->
-  <!--   Core JS Files   -->
-  <script src="/static/assets/js/core/jquery.min.js"></script>      
-  <!-- Tooltip library -->
-  <script src="/static/assets/js/core/popper.min.js"></script>
-  <!-- Tools for dashboard -->
-  <script src="/static/assets/js/core/bootstrap.min.js"></script>
-  <script src="/static/assets/js/dashboard/black-dashboard.min.js?v=1.0.0"></script>   
-  <script src="/static/assets/js/dashboard/black-dashboard-initialize.js"></script>
-  <!-- SockJs for Vert.x library -->
-  <script src="/static/assets/js/plugins/sockjs.1.3.0.min.js"></script>
-  <script src="/static/assets/js/plugins/vertx-eventbus.3.6.0.min.js"></script>  
-  <script src="/static/assets/js/plugins/eventbus-registry.js"></script>   
-  <script src="/static/assets/js/registry-controller.js"></script>
-  <a href="http://www.reactivemanifesto.org/"> 
-    <img style="border: 0; position: fixed; right: 0; top:0; z-index: 9000" src="http://d379ifj7s9wntv.cloudfront.net/reactivemanifesto/images/ribbons/we-are-reactive-red-right.png"> 
-  </a>
+<!-- ************************************** J A V A S C R I P T    F I L E S ****************************************************************** -->
+<!-- ******** N O T A: ES REQUERIDO EL ORDEN DE LOS IMPORTS-->
+<!--   Core JS Files   -->
+<script src="/static/assets/js/core/jquery.min.js"></script>
+<!-- Tooltip library -->
+<script src="/static/assets/js/core/popper.min.js"></script>
+<!-- Tools for dashboard -->
+<script src="/static/assets/js/core/bootstrap.min.js"></script>
+<script src="/static/assets/js/dashboard/black-dashboard.min.js?v=1.0.0"></script>
+<script src="/static/assets/js/dashboard/black-dashboard-initialize.js"></script>
+<!-- SockJs for Vert.x library -->
+<script src="/static/assets/js/plugins/sockjs.1.3.0.min.js"></script>
+<script src="/static/assets/js/plugins/vertx-eventbus.3.6.0.min.js"></script>
+<script src="/static/assets/js/plugins/eventbus-registry.js"></script>
+<script src="/static/assets/js/registry-controller.js"></script>
+<a href="http://www.reactivemanifesto.org/">
+  <img style="border: 0; position: fixed; right: 0; top:0; z-index: 9000" src="http://d379ifj7s9wntv.cloudfront.net/reactivemanifesto/images/ribbons/we-are-reactive-red-right.png">
+</a>
 </body>
 
 </html>

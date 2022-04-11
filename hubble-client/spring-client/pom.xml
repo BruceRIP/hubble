@@ -19,7 +19,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <javax.servlet.version>4.0.1</javax.servlet.version>
-        <org.springframework.version>2.2.5.RELEASE</org.springframework.version>
+        <org.springframework.version>2.5.12</org.springframework.version>
     </properties>
 
     <dependencies>

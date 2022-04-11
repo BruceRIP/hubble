@@ -29,7 +29,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <snakeyaml.yaml.version>1.25</snakeyaml.yaml.version>
+        <snakeyaml.yaml.version>1.26</snakeyaml.yaml.version>
     </properties>
 
     <dependencies>

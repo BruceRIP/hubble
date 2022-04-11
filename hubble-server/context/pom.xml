@@ -29,7 +29,7 @@
     <url>http://maven.apache.org</url>
 
     <properties>
-        <io.vertx.version>3.6.3</io.vertx.version>
+        <io.vertx.version>3.9.4</io.vertx.version>
     </properties>
 
     <dependencies>
